@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Welcome to Pulchowk trip form</h3>
+        <p>Enter your details and submit this form to confirm your participation in the trip</p>
+        <!-- There are two methods namely get and post. Post is secured but whatever we send in gate can be seen in the url itself -->
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="number" name="class" id="class" placeholder="Enter your class">
+            <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+            <input type="number" name="phone" id="phone" placeholder="Enter your Number">
+            <textarea name="desc" id="desc" cols="30" rows="10"
+                placeholder="Enter any other description here"></textarea>
+            <button class="btn">Submit</button>
+            <!-- You can also add multiple classes like here class="btn button", which simply means both btn and button classes are used -->
+            <button class="btn">Reset</button>
+            <!-- Difference between id and classes is that id identifies each element uniquely whereas multiple elemets have the same class -->
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
